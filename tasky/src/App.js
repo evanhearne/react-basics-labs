@@ -12,7 +12,7 @@ function App() {
       { id: 4, title: "Practice TEFAQ", description: "Pratiquer les questions de TEFAQ pendant une heure. ", deadline: "Today" },
       { id: 5, title: "React", description: "Learn React", deadline: "Today" },
     ]
-  });
+  }); 
   return (
     <div className="container">
       <h1>Tasky</h1>
