@@ -8,7 +8,9 @@ function App() {
     tasks: [
       { id: 1, title:"Dishes", description: "Empty dishwasher", deadline: "Today" },
       { id: 2, title: "Laundry", description: "Fold clothes and put away", deadline: "Tomorrow" },
-      { id: 3, title: "Tidy up", deadline: "Today" }
+      { id: 3, title: "Tidy up", deadline: "Today" },
+      { id: 4, title: "Practice TEFAQ", description: "Pratiquer les questions de TEFAQ pendant une heure. ", deadline: "Today" },
+      { id: 5, title: "React", description: "Learn React", deadline: "Today" },
     ]
   });
   return (
