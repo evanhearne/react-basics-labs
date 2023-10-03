@@ -2,6 +2,19 @@ import React from "react";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import MenuItem from '@mui/material/MenuItem';
+
+const priorities = [
+  {
+    value: 'High'
+  },
+  {
+    value: 'Medium'
+  },
+  {
+    value: 'Low'
+  }
+];
 
 const AddTaskForm = (props) => {
 
@@ -43,6 +56,24 @@ const AddTaskForm = (props) => {
           rows={4}
           onChange={(event) => props.change(event)}
         />
+      </div>
+      <div>
+        <TextField
+          required
+          id="outlined-select-currency"
+          name="priority"
+          defaultValue=""
+          select
+          label="Priority"
+          InputLabelProps={{ shrink: true }}
+          onChange={(event) => props.change(event)}
+        >
+          {priorities.map((option) => (
+            <MenuItem key={option.value} value={option.value}>
+              {option.value}
+            </MenuItem>
+          ))}
+        </TextField>
       </div>
       <div>
         <Button 
